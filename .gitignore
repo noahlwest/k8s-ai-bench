@@ -1,0 +1,21 @@
+# Binary
+k8s-ai-bench
+kubectl-ai
+
+# Log files
+*.log
+trace.log
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Go specific
+*.test
+*.out
+/vendor/
+
+# Build artifacts
+.build/
