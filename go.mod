@@ -1,10 +1,8 @@
-module github.com/GoogleCloudPlatform/kubectl-ai/k8s-ai-bench
+module github.com/gke-labs/k8s-ai-bench
 
 go 1.24.0
 
 toolchain go1.24.1
-
-replace github.com/GoogleCloudPlatform/kubectl-ai => ./..
 
 require (
 	k8s.io/klog/v2 v2.130.1

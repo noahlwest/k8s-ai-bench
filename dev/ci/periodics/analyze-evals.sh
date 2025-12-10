@@ -17,7 +17,7 @@ fi
 BINDIR="${REPO_ROOT}/.build/bin"
 mkdir -p "${BINDIR}"
 
-cd "${REPO_ROOT}/k8s-ai-bench"
+cd "${REPO_ROOT}"
 go build -o "${BINDIR}/k8s-ai-bench" .
 
 cd "${REPO_ROOT}"
@@ -30,3 +30,4 @@ fi
 
 "${BINDIR}/k8s-ai-bench" analyze --input-dir "${OUTPUT_DIR}" ${TEST_ARGS:-} -results-filepath ${REPO_ROOT}/.build/k8s-ai-bench.md --output-format markdown ${ANALYZE_ARGS}
 "${BINDIR}/k8s-ai-bench" analyze --input-dir "${OUTPUT_DIR}" ${TEST_ARGS:-} -results-filepath ${REPO_ROOT}/.build/k8s-ai-bench.json --output-format json
+"${BINDIR}/k8s-ai-bench" analyze --input-dir "${OUTPUT_DIR}" ${TEST_ARGS:-} -results-filepath ${REPO_ROOT}/.build/k8s-ai-bench.jsonl --output-format jsonl

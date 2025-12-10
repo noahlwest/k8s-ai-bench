@@ -1,4 +1,4 @@
-# Contribution Guide: `kubectl-ai` Evaluations
+# Contribution Guide: `k8s-ai-bench` Evaluations for `kubectl-ai`
 We welcome contributions to expand our set of evaluations that test how well Large Language Models (LLMs) work with `kubectl-ai`. This guide outlines the requirements, format, and best practices for creating new evals.
 
 ### Core Evaluation Categories

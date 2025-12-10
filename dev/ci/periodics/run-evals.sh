@@ -20,7 +20,7 @@ mkdir -p "${BINDIR}"
 
 curl -sSL https://raw.githubusercontent.com/GoogleCloudPlatform/kubectl-ai/main/install.sh | bash
 
-cd "${REPO_ROOT}/k8s-ai-bench"
+cd "${REPO_ROOT}"
 go build -o "${BINDIR}/k8s-ai-bench" .
 
 "${BINDIR}/k8s-ai-bench" run --agent-bin kubectl-ai --kubeconfig "${KUBECONFIG:-~/.kube/config}" --output-dir "${OUTPUT_DIR}" ${TEST_ARGS:-}

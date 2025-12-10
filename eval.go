@@ -28,7 +28,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/GoogleCloudPlatform/kubectl-ai/k8s-ai-bench/pkg/model"
+	"github.com/gke-labs/k8s-ai-bench/pkg/model"
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/yaml"
 )

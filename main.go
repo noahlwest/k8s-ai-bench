@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoogleCloudPlatform/kubectl-ai/k8s-ai-bench/pkg/model"
+	"github.com/gke-labs/k8s-ai-bench/pkg/model"
 	"sigs.k8s.io/yaml"
 )
 
